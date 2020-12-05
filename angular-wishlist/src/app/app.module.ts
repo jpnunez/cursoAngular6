@@ -31,6 +31,7 @@ const routes: Routes =[
     AppRoutingModule
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
