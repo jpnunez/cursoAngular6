@@ -1,6 +1,10 @@
 export class DestinoVIaje {
     private selected: boolean;
-    constructor(public nombre: string, public u: string){}
+    public servicios: string[];
+    
+    constructor(public nombre: string, public u: string){
+        this.servicios = ['pileta','desayuno'];
+    }
     isSelected(): boolean {
         return this.selected;
     }

@@ -1,4 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+// older Angular versions
+// import {BrowserModule, CommonModule} from '@angular/common';
+
+import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';

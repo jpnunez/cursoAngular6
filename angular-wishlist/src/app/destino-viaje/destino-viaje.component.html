@@ -5,7 +5,15 @@
         </div>
         <div	class="card-desc">
             <h3>{{destino.nombre}}</h3>
-            <p>Lorem	ipsum	dolor	sit	amet	consectetur,	adipisicing	elit.	Laboriosam,	voluptatum!	Dolor quo,	perspiciatis voluptas	totam</p>
+            <p>Servicios</p>
+            <ul>
+                <li *ngFor="let s of destino.servicios">
+                    <span [ngSwitch]="s">
+                        <i *ngSwitchCase="'desayuno'">{{s}}</i>
+                        {{s}}
+                    </span>
+                </li>
+            </ul>
             <a	href="#"	class="btn-card" (click)="ir()">Ir!</a>
             <span [style.display]="destino.isSelected() ? '' : 'none'"> PREFERED </span>	
         </div>
